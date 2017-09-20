@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: #56ab2f; 
+    background: -webkit-linear-gradient(to right, #a8e063, #56ab2f); 
+    background: linear-gradient(to right, #a8e063, #56ab2f); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+section {
+    display: flex;
+    background: #cb2d3e; 
+    background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);
+    background: linear-gradient(to right, #ef473a, #cb2d3e); 
+    position: relative;
+    width: 850px;
+    height: 500px;
+    align-items: center;
+}
+
+h1 {
+    margin: auto;
+    width: 600px;
+    height: 300px;
+    text-align: center;
+    background: #ffb347; 
+    background: -webkit-linear-gradient(to left, #ffcc33, #ffb347);  
+    background: linear-gradient(to left, #ffcc33, #ffb347);
+    font-family: 'Segoe UI', Tahoma;
+    padding-top: 130px;
+    color:#cb2d3e;
+}
+
+img {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    width: 100px;
+    animation-name: clock;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+span {
+    color: #00A1A3;
+}
+
+@keyframes clock{
+    0%   {right:15px; bottom:15px;}
+    25%  {right:738px; bottom:15px;}
+    50%  {right:738px; bottom:417px;}
+    75%  {right:15px; bottom:417px;}
+    100% {right:15px; bottom:15px;}
+}
